@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japonsko na Jeseň: Dokonalé Dobrodružstvo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #B22222; /* Firebrick Red */
+            --secondary-color: #4682B4; /* Steel Blue */
+            --background-color: #f8f9fa;
+            --text-color: #333;
+            --light-gray: #e9ecef;
+            --white: #fff;
+            --border-radius: 8px;
+            --shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        body {
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.7;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-image: url('https://images.unsplash.com/photo-1542051841857-5f90071e7989?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+            color: var(--white);
+            text-align: center;
+            padding: 100px 20px;
+            position: relative;
+        }
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        header .content {
+            position: relative;
+            z-index: 1;
+        }
+        header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        header p {
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+        section {
+            padding: 50px 0;
+            border-bottom: 1px solid var(--light-gray);
+        }
+        h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 40px;
+        }
+        .card {
+            background: var(--white);
+            border-radius: var(--border-radius);
+            padding: 30px;
+            box-shadow: var(--shadow);
+            margin-bottom: 20px;
+        }
+        .map-section {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .map-container {
+            flex: 2;
+            min-width: 300px;
+        }
+        .map-container iframe {
+            width: 100%;
+            height: 600px;
+            border: 0;
+            border-radius: var(--border-radius);
+        }
+        .accordion-container {
+            flex: 1;
+            min-width: 300px;
+        }
+        .accordion-item {
+            background-color: var(--white);
+            margin-bottom: 10px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            overflow: hidden;
+        }
+        .accordion-header {
+            background-color: var(--white);
+            color: var(--primary-color);
+            cursor: pointer;
+            padding: 18px 20px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 1.1rem;
+            font-weight: 700;
+            transition: background-color 0.3s ease;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .accordion-header:hover {
+            background-color: #f1f1f1;
+        }
+        .accordion-header::after {
+            content: '+';
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--secondary-color);
+        }
+        .accordion-header.active::after {
+            content: "−";
+        }
+        .accordion-content {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+            background-color: var(--white);
+        }
+        .accordion-content p {
+            margin: 15px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid var(--light-gray);
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: var(--secondary-color);
+            color: var(--white);
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        ul {
+            list-style-type: '🍁';
+            padding-left: 20px;
+        }
+        li {
+            padding-left: 10px;
+            margin-bottom: 10px;
+        }
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .pillar-card {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid var(--light-gray);
+            border-radius: var(--border-radius);
+        }
+        .pillar-card h3 {
+            color: var(--secondary-color);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: var(--light-gray);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="content">
+            <h1>Japonsko na Jeseň: Dokonalé Dobrodružstvo</h1>
+            <p>16-dňový itinerár pre hlboký ponor do kultúry, prírody a gastronómie</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="filozofia">
+            <div class="card">
+                <h2>Filozofia Cesty</h2>
+                <p>Rozhodnutie preorientovať jesennú cestu z prímorskej Okinawy na vnútrozemské klenoty ostrova Honšú je nielen logické, ale aj strategicky brilantné. Jeseň je pravdepodobne najkrajším a najpôsobivejším obdobím na návštevu centrálneho Japonska. Je to čas, kedy sa krajina mení na živé plátno ohnivých farieb, teploty sú príjemné a vzduch je svieži.</p>
+                
+                <h3>Kōyō Zensen - Front Jesenného Lístia</h3>
+                <p>Základná myšlienka tejto cesty je postavená na sledovaní takzvaného "frontu jesenného lístia" (kōyō zensen), ktorý postupuje z vyšších nadmorských výšok a severnejších oblastí smerom na juh a do nížin. Nahradenie Okinawy Japonskými Alpami a horským útočiskom Nikkó nie je len jednoduchou alternatívou; je to cielené vylepšenie, ktoré je dokonale synchronizované s jesenným obdobím.</p>
+                
+                <p>Tento prístup maximalizuje šancu zažiť vrchol farebnosti na viacerých miestach – od skorších farieb v horských oblastiach Nikkó a Takayama až po neskorší vrchol v nížinách Kjóta a Tokia. Ideálny termín pre túto cestu je približne od 10. do 26. novembra.</p>
+                
+                <div style="background: #f8f9fa; padding: 20px; border-left: 4px solid var(--primary-color); margin: 20px 0;">
+                    <h4 style="color: var(--primary-color); margin-top: 0;">⚠️ Dôležitá Poznámka k Rezerváciám</h4>
+                    <p style="margin-bottom: 0;"><strong>Jeseň je absolútna turistická špička!</strong> Dopyt po ubytovaní a doprave je extrémne vysoký. Pre zabezpečenie najlepších možností a cien je nevyhnutné rezervovať ubytovanie a kľúčové dopravné spojenia <strong>4 až 6 mesiacov vopred</strong>. Pre luxusné ryokany môže byť potrebná rezervácia až 10-12 mesiacov dopredu.</p>
+                </div>
+                <div class="grid-3">
+                    <div class="pillar-card">
+                        <h3>🍁 Strategická Doprava</h3>
+                        <p>Inteligentná kombinácia jednotlivých lístkov na vlaky, regionálnych pasov a autobusov pre maximálnu efektivitu a úsporu nákladov.</p>
+                    </div>
+                    <div class="pillar-card">
+                        <h3>🍁 Ubytovanie s Kontrastom</h3>
+                        <p>Striedanie cenovo dostupného komfortu s dvoma cielenými luxusnými nocami – tradičný ryokan a moderný výškový hotel.</p>
+                    </div>
+                    <div class="pillar-card">
+                        <h3>🍁 Logistika bez Stresu</h3>
+                        <p>Využitie osvedčených metód ako preposielanie batožiny Takkyubin a staničné úschovne pre maximálny komfort a čas na objavovanie.</p>
+                    </div>
+                </div>
+                 <p style="text-align:center; margin-top: 20px; font-weight: bold; color: var(--primary-color);">Dôležitá poznámka: Jeseň je absolútna turistická špička. Ubytovanie a kľúčové dopravné spojenia je nevyhnutné rezervovať 4 až 6 mesiacov vopred!</p>
+            </div>
+        </section>
+
+        <section id="mapa">
+            <h2>Mapa a Prehľad Cesty</h2>
+            <div class="map-section">
+                <div class="map-container">
+                    <div id="map" style="width: 100%; height: 600px; border-radius: var(--border-radius);"></div>
+                </div>
+                <div class="accordion-container">
+                    <div class="accordion-item" data-location="tokyo">
+                        <button class="accordion-header">Dni 1-2: Prílet a Prvý Kontakt s Tokiom</button>
+                        <div class="accordion-content">
+                            <p>Prílet, presun do štvrte Shinjuku. Prvá prechádzka, bezplatná vyhliadka z Tokyo Metropolitan Government Building a večera v uličke Omoide Yokocho.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item" data-location="nikko">
+                        <button class="accordion-header">Dni 3-4: Nikkó – Posvätné Hory a Farby</button>
+                        <div class="accordion-content">
+                            <p>Dvojdňový výlet z Tokia. Prvý deň návšteva komplexu svätýň UNESCO (Tōshōgū). Druhý deň venovaný prírode - cesta Irohazaka, jazero Chūzenji a vodopád Kegon.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item" data-location="hakone">
+                        <button class="accordion-header">Dni 5-6: Hakone – Umenie, Príroda a Luxus</button>
+                        <div class="accordion-content">
+                            <p>Presun do Hakone, absolvovanie okruhu Hakone Loop (vlak, lanovka, loď). Návšteva Open-Air Museum. Vrcholom je noc v luxusnom ryokane s privátnym onsenom a večerou kaiseki.</p>
+                        </div>
+                    </div>
+                     <div class="accordion-item" data-location="kyoto">
+                        <button class="accordion-header">Dni 7-10: Kjóto – Srdce Tradičného Japonska</button>
+                        <div class="accordion-content">
+                            <p>Štyri noci v kultúrnom centre. Prieskum štvrtí Gion a Pontocho. Návšteva chrámov Kiyomizu-dera, Kinkaku-ji, lesa Arashiyama a výlet do Nary (jelene, obrí Budha) a Fushimi Inari (tisíce torii brán).</p>
+                        </div>
+                    </div>
+                     <div class="accordion-item" data-location="himeji">
+                        <button class="accordion-header">Deň 11: Hrad Himeji a Cesta do Kanazawy</button>
+                        <div class="accordion-content">
+                            <p>Návšteva najkrajšieho japonského hradu Himeji ("Hrad bielej volavky"). Popoludní presun vlakom do Kanazawy pri Japonskom mori.</p>
+                        </div>
+                    </div>
+                     <div class="accordion-item" data-location="kanazawa">
+                        <button class="accordion-header">Deň 12: Kanazawa – Záhrady a Samuraji</button>
+                        <div class="accordion-content">
+                            <p>Preposlanie batožiny do Tokia. Prieskum jednej z najkrajších záhrad Japonska, Kenrokuen, a historických štvrtí samurajov a gejší. Obed na trhu Omicho.</p>
+                        </div>
+                    </div>
+                     <div class="accordion-item" data-location="shirakawa">
+                        <button class="accordion-header">Deň 13: Shirakawa-go a Príchod do Takayamy</button>
+                        <div class="accordion-content">
+                            <p>Cesta autobusom do unikátnej dedinky Shirakawa-go (UNESCO) s tradičnými gassho-zukuri domami. Popoludí presun do horského mesta Takayama.</p>
+                        </div>
+                    </div>
+                     <div class="accordion-item" data-location="takayama">
+                        <button class="accordion-header">Deň 14: Takayama – Alpská Atmosféra</button>
+                        <div class="accordion-content">
+                            <p>Návšteva ranných trhov a prechádzka po zachovalom starom meste Sanmachi Suji. Kulinársky zážitok v podobe ochutnávky svetoznámeho Hida hovädzieho.</p>
+                        </div>
+                    </div>
+                     <div class="accordion-item" data-location="tokyo">
+                        <button class="accordion-header">Deň 15: Návrat do Tokia a Luxusné Finále</button>
+                        <div class="accordion-content">
+                            <p>Cesta vlakom späť do Tokia. Ubytovanie vo výškovom hoteli v Shinjuku. Večer venovaný relaxu a vychutnávaniu si panoramatických výhľadov na mesto zo strešného baru.</p>
+                        </div>
+                    </div>
+                     <div class="accordion-item" data-location="tokyo">
+                        <button class="accordion-header">Deň 16: Posledné Chvíle a Odlet</button>
+                        <div class="accordion-content">
+                            <p>Dopoludnie na posledné nákupy, návštevu svätyne Meiji Jingu alebo parku Shinjuku Gyoen. Následne presun na letisko a odlet domov.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="logistika">
+            <h2>Praktický Plán Cesty</h2>
+            <div class="card">
+                <h3>Doprava: Navigácia s Maximálnou Efektivitou</h3>
+                
+                <div style="background: #fff3cd; border: 1px solid #ffeaa7; border-radius: 8px; padding: 15px; margin: 15px 0;">
+                    <h4 style="color: #856404; margin-top: 0;">💡 Japan Rail Pass vs. Jednotlivé Lístky</h4>
+                    <p>Po dramatickom zvýšení cien v októbri 2023 už 14-dňový JR Pass (80 000 JPY/osobu) nie je pre tento itinerár najvýhodnejší. <strong>Úspora pri nákupe jednotlivých lístkov: ~25 000 JPY na osobu!</strong></p>
+                </div>
+
+                <h4>Analýza Nákladov na Hlavné Trasy (1 osoba):</h4>
+                <table style="margin: 15px 0;">
+                    <thead>
+                        <tr>
+                            <th>Trasa</th>
+                            <th>Doprava</th>
+                            <th>Cena (JPY)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Tokyo ↔ Nikkó (spiatočne)</td><td>JR + Tobu Line</td><td>5 600</td></tr>
+                        <tr><td>Tokyo → Odawara</td><td>Shinkansen</td><td>3 280</td></tr>
+                        <tr><td>Hakone (2 dni)</td><td>Hakone Free Pass</td><td>5 000</td></tr>
+                        <tr><td>Odawara → Kyoto</td><td>Shinkansen</td><td>11 770</td></tr>
+                        <tr><td>Kyoto → Himeji</td><td>Shinkansen</td><td>4 750</td></tr>
+                        <tr><td>Himeji → Kanazawa</td><td>Ltd. Express</td><td>8 500</td></tr>
+                        <tr><td>Kanazawa → Shirakawa-go</td><td>Nohi Bus</td><td>2 800</td></tr>
+                        <tr><td>Shirakawa-go → Takayama</td><td>Nohi Bus</td><td>2 800</td></tr>
+                        <tr><td>Takayama → Tokyo</td><td>Ltd. Exp. + Shinkansen</td><td>14 340</td></tr>
+                        <tr style="background: #e8f5e8; font-weight: bold;"><td colspan="2">SPOLU</td><td>58 840</td></tr>
+                        <tr style="background: #fff3cd;"><td colspan="2">JR Pass (14 dní)</td><td>80 000</td></tr>
+                        <tr style="background: #d4edda; font-weight: bold; color: #155724;"><td colspan="2">ÚSPORA</td><td>21 160</td></tr>
+                    </tbody>
+                </table>
+
+                <h4>Kľúčové Stratégie:</h4>
+                <ul>
+                    <li><b>Jednotlivé lístky Shinkansen:</b> Zakupujte online vopred alebo na staniciach. Nerezervované miesta sú lacnejšie o 500-1000 JPY.</li>
+                    <li><b>Hakone Free Pass (2 dni, 5 000 JPY):</b> Pokrýva všetku dopravu v regióne - vlaky, lanovky, lode aj autobusy. Nevyhnutnosť!</li>
+                    <li><b>Nohi Bus - Japonské Alpy:</b> Kanazawa → Shirakawa-go → Takayama. Rezervácia vopred nutná, najmä v sezóne.</li>
+                    <li><b>IC karta (Suica/Pasmo):</b> Základný nástroj pre mestskú dopravu. Funguje vo všetkých veľkých mestách.</li>
+                    <li><b>Denné lístky:</b> V Tokiu (Tokyo Subway Ticket 800 JPY/24h) a Kjóte (Subway & Bus Pass 1 100 JPY) sa vyplatia pri 4+ jazdách.</li>
+                </ul>
+
+                <h3>Ubytovanie: Stratégia Kontrastov</h3>
+                
+                <h4>13 Nocí - Cenovo Dostupný Komfort (7 000 - 15 000 JPY/noc za izbu)</h4>
+                <p>Kvalitné hostely so súkromnými izbami a "business hotely" s vynikajúcim pomerom ceny a kvality. Všetky sú známe čistotou, bezpečnosťou a strategickou polohou.</p>
+                
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin: 15px 0;">
+                    <div style="background: #f8f9fa; padding: 15px; border-radius: 8px;">
+                        <h5 style="color: var(--secondary-color); margin-top: 0;">🏨 Odporúčané Siete</h5>
+                        <p><strong>K's House:</strong> Priateľská atmosféra, skvelé vybavenie (kuchynky, spoločné priestory). Pobočky v Kjóte a Takayame ideálne.</p>
+                        <p style="margin-bottom: 0;"><strong>Piece Hostel:</strong> Moderný dizajn, čistota, perfektná lokalita. Sanjo v Kjóte výnimočne hodnotený.</p>
+                    </div>
+                    <div style="background: #f8f9fa; padding: 15px; border-radius: 8px;">
+                        <h5 style="color: var(--secondary-color); margin-top: 0;">📍 Strategické Umiestnenie</h5>
+                        <p>Všetky hotely v blízkosti dopravných uzlov a centra diania. Vzdialených destinácií sa vyhnite - čas je drahocenný!</p>
+                    </div>
+                </div>
+
+                <h4>2 Luxusné Noci - Nezabudnuteľné Zážitky</h4>
+                
+                <div style="border: 2px solid var(--primary-color); border-radius: 12px; padding: 20px; margin: 20px 0; background: linear-gradient(135deg, #fff 0%, #fafafa 100%);">
+                    <h5 style="color: var(--primary-color); margin-top: 0;">🏮 Luxusná Noc #1: Tradičný Ryokan v Hakone</h5>
+                    <p><strong>Zážitok:</strong> Autentická japonská pohostinnosť - izba s tatami, privátny onsen, viacchodová večera kaiseki a tradičné raňajky.</p>
+                    
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 15px;">
+                        <div>
+                            <p><strong>Top-tier (100-200k JPY/noc):</strong><br>
+                            • Gora Kadan (bývalá cisárska vila)<br>
+                            • Hakone Ginyu (exkluzivita & dizajn)</p>
+                        </div>
+                        <div>
+                            <p><strong>Value-Luxury (70-120k JPY/noc):</strong><br>
+                            • Gora Karaku (odporúčané)<br>
+                            • Tensui Saryo (moderný + tradičný)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="border: 2px solid var(--secondary-color); border-radius: 12px; padding: 20px; margin: 20px 0; background: linear-gradient(135deg, #fff 0%, #fafafa 100%);">
+                    <h5 style="color: var(--secondary-color); margin-top: 0;">🏙️ Luxusná Noc #2: Výškový Hotel v Tokiu (Shinjuku)</h5>
+                    <p><strong>Zážitok:</strong> Moderný luxus, panoramatické výhľady na nekonečné svetlá nočného Tokia, štýlová bodka za cestou.</p>
+                    
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 15px;">
+                        <div>
+                            <p><strong>Ikonická voľba (100k+ JPY/noc):</strong><br>
+                            • Park Hyatt Tokyo<br>
+                            • Legendárny New York Bar<br>
+                            • Film "Stratené v preklade"</p>
+                        </div>
+                        <div>
+                            <p><strong>Moderná voľba (75k+ JPY/noc):</strong><br>
+                            • Bellustar Tokyo<br>
+                            • Poschodia 39-44<br>
+                            • Najlepšie výhľady v meste</p>
+                        </div>
+                    </div>
+                </div>
+
+                 <h3>Praktické Aspekty Cesty - Tipy od Experta</h3>
+                 
+                 <h4>🎒 Batožina: Cestujte Naľahko</h4>
+                 <div style="background: #e8f5e8; border-left: 4px solid #28a745; padding: 15px; margin: 15px 0;">
+                     <p><strong>Takkyubin (Preposielanie Batožiny):</strong> Najznámejší poskytovateľ je Yamato Transport ("Kuroneko" - Čierna mačka). Recepcia hotela ochotne pomôže s formulárom.</p>
+                     <p><strong>Odporúčaná stratégia:</strong> Deň 12 pošlite veľkú batožinu z Kanazawy priamo do finálneho hotela v Tokiu. Cez Japonské Alpy cestujte len s malým batohom na 3 dni!</p>
+                     <p style="margin-bottom: 0;"><strong>Cena:</strong> 2 500 - 3 500 JPY za kufor, doručenie nasledujúci deň.</p>
+                 </div>
+
+                 <div style="background: #f0f8ff; border-left: 4px solid var(--secondary-color); padding: 15px; margin: 15px 0;">
+                     <p><strong>Úschovne na Staniciach (Coin Lockers):</strong> Na všetkých väčších staniciach. Ideálne na jednodňové výlety (napr. Himeji).</p>
+                     <p style="margin-bottom: 0;"><strong>Ceny:</strong> Malá skrinka 500 JPY, veľká (na kufor) 1 000 JPY. V Shinjuku obrovské množstvo, ale často obsadené.</p>
+                 </div>
+
+                 <h4>📱 Konektivita: Zostaňte v Spojení</h4>
+                 <div style="background: #fff3cd; border-left: 4px solid #ffc107; padding: 15px; margin: 15px 0;">
+                     <p><strong>Pre páry: 2 samostatné eSIM karty</strong> (nie Wi-Fi pocket!)</p>
+                     <p><strong>Výhody:</strong> Nezávislosť, žiadne nosenie/nabíjanie extra zariadenia, obaja zostanú pripojení pri rozdelení.</p>
+                     <p style="margin-bottom: 0;"><strong>Odporúčanie:</strong> 10-20 GB na 30 dní, 2 500-4 000 JPY/osobu. Aktivácia cez QR kód.</p>
+                 </div>
+
+                 <h4>🗺️ Navigácia v Mestských Džungliach</h4>
+                 
+                 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 20px 0;">
+                     <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; border: 1px solid #dee2e6;">
+                         <h5 style="color: var(--primary-color); margin-top: 0;">🚉 Stanica Shinjuku</h5>
+                         <p><strong>Najrušnejšia stanica sveta!</strong> Rozdeľte si ju mentálne na 3 časti:</p>
+                         <ul style="margin: 10px 0; font-size: 0.9em;">
+                             <li><strong>Východná:</strong> Nákupy, Kabukicho</li>
+                             <li><strong>Západná:</strong> Mrakodrapy, vláda</li>
+                             <li><strong>Južná:</strong> Autobusy, nové centrá</li>
+                         </ul>
+                         <p style="margin-bottom: 0; font-size: 0.9em;"><strong>Tip:</strong> Južný východ hore (2F), Východný/Západný dole (B1F). Ak sa stratíte, vyjdite na ulicu!</p>
+                     </div>
+                     
+                     <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; border: 1px solid #dee2e6;">
+                         <h5 style="color: var(--secondary-color); margin-top: 0;">🚅 Stanica Tokio</h5>
+                         <p><strong>Dve tváre:</strong></p>
+                         <ul style="margin: 10px 0; font-size: 0.9em;">
+                             <li><strong>Západná (Marunouchi):</strong> Historická tehlová budova, Cisársky palác</li>
+                             <li><strong>Východná (Yaesu):</strong> Moderná, priamy prístup k Shinkansenov (nástupiská 14-23)</li>
+                         </ul>
+                         <p style="margin-bottom: 0; font-size: 0.9em;"><strong>Pre Shinkansen:</strong> Vždy choďte na stranu Yaesu - najjednoduchší prístup!</p>
+                     </div>
+                 </div>
+            </div>
+        </section>
+
+        <section id="rozpocet">
+            <h2>Komplexný Rozpočet (Odhad)</h2>
+            <div class="card">
+                <p>Rozpočet je zostavený pre dve osoby a slúži ako podrobný odhad. Kurz: 1 EUR ≈ 170 JPY.</p>
+                
+                <h3>Celkový Prehľad Rozpočtu (na 2 osoby)</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Kategória</th>
+                            <th>Odhad v JPY</th>
+                            <th>Odhad v EUR</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ubytovanie (15 nocí)</td>
+                            <td>336 000 JPY</td>
+                            <td>1 977 EUR</td>
+                        </tr>
+                        <tr>
+                            <td>Medzimestská Doprava</td>
+                            <td>127 980 JPY</td>
+                            <td>753 EUR</td>
+                        </tr>
+                        <tr>
+                            <td>Miestna Doprava</td>
+                            <td>36 000 JPY</td>
+                            <td>212 EUR</td>
+                        </tr>
+                        <tr>
+                            <td>Strava (stredný odhad)</td>
+                            <td>210 000 JPY</td>
+                            <td>1 235 EUR</td>
+                        </tr>
+                        <tr>
+                            <td>Vstupy a Atrakcie</td>
+                            <td>40 000 JPY</td>
+                            <td>235 EUR</td>
+                        </tr>
+                        <tr>
+                            <td>Ostatné (eSIM, úschovne...)</td>
+                            <td>30 000 JPY</td>
+                            <td>176 EUR</td>
+                        </tr>
+                        <tr>
+                            <th>CELKOVÝ ODHAD SPOLU</th>
+                            <th>779 980 JPY</th>
+                            <th>4 588 EUR</th>
+                        </tr>
+                         <tr>
+                            <td colspan="3" style="text-align:center;"><b>Približne 2 294 EUR na osobu</b></td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h3 style="margin-top: 30px;">Podrobný Rozpis Ubytovania (na 2 osoby, 15 nocí)</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Typ Ubytovania</th>
+                            <th>Počet Nocí</th>
+                            <th>Cena/Noc (JPY)</th>
+                            <th>Spolu (JPY)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Budget Hostely/Hotely</td>
+                            <td>13</td>
+                            <td>12 000</td>
+                            <td>156 000</td>
+                        </tr>
+                        <tr>
+                            <td>Luxusný Ryokan (Hakone)</td>
+                            <td>1</td>
+                            <td>95 000</td>
+                            <td>95 000</td>
+                        </tr>
+                        <tr>
+                            <td>Luxusný Hotel (Tokio)</td>
+                            <td>1</td>
+                            <td>85 000</td>
+                            <td>85 000</td>
+                        </tr>
+                        <tr style="background: #e8f5e8; font-weight: bold;">
+                            <td colspan="3">CELKOM UBYTOVANIE</td>
+                            <td>336 000 JPY</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3 style="margin-top: 30px;">Denný Odhad Výdavkov (na 1 osobu)</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Kategória</th>
+                            <th>Budget (JPY)</th>
+                            <th>Stredný (JPY)</th>
+                            <th>Vyšší (JPY)</th>
+                            <th>Poznámky</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Raňajky</td>
+                            <td>500</td>
+                            <td>800</td>
+                            <td>1 500+</td>
+                            <td>Konbini / Kaviareň / Hotel</td>
+                        </tr>
+                        <tr>
+                            <td>Obed</td>
+                            <td>800</td>
+                            <td>1 500</td>
+                            <td>2 500+</td>
+                            <td>Stánok / Teishoku set / Reštaurácia</td>
+                        </tr>
+                        <tr>
+                            <td>Večera</td>
+                            <td>1 200</td>
+                            <td>3 000</td>
+                            <td>5 000+</td>
+                            <td>Izakaya / Bežná / Lepšia reštaurácia</td>
+                        </tr>
+                        <tr>
+                            <td>Miestna doprava</td>
+                            <td>600</td>
+                            <td>1 200</td>
+                            <td>2 000</td>
+                            <td>2-3 jazdy / Denný lístok / Viac + taxi</td>
+                        </tr>
+                        <tr>
+                            <td>Vstupy & atrakcie</td>
+                            <td>500</td>
+                            <td>1 500</td>
+                            <td>3 000+</td>
+                            <td>1 chrám / 2-3 pamiatky / Múzeá</td>
+                        </tr>
+                        <tr style="background: #fff3cd; font-weight: bold;">
+                            <td>SPOLU/DEŇ</td>
+                            <td>3 600</td>
+                            <td>8 000</td>
+                            <td>14 000+</td>
+                            <td>21-82+ EUR</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div style="background: #e3f2fd; border-left: 4px solid var(--secondary-color); padding: 15px; margin: 20px 0;">
+                    <h4 style="color: var(--secondary-color); margin-top: 0;">💡 Tip na Úspory</h4>
+                    <p><strong>Konbini jedlo:</strong> Kvalitné a lacné jedlo z obchodíkov. Ideálne pre raňajky a občasné obedy.</p>
+                    <p><strong>Teishoku sety:</strong> Komplexné obedy za 800-1200 JPY. Výborný pomer ceny a kvality.</p>
+                    <p style="margin-bottom: 0;"><strong>Happy hours:</strong> Mnohé izakaya majú zvýhodnené ceny do 18:00.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="detaily">
+            <h2>Kľúčové Informácie a Špecializácie</h2>
+            
+            <div class="grid-3">
+                <div class="card">
+                    <h3 style="color: var(--primary-color);">🍜 Kulinárske Špecialitky</h3>
+                    <p><strong>Nikkó:</strong> Yuba (koža sójového mlieka) - čerstvá, sušená alebo vyprážaná.</p>
+                    <p><strong>Hakone:</strong> Kaiseki večera v ryokane - umelecky podávaná viacchodová hostina.</p>
+                    <p><strong>Kjóto:</strong> Rafinovaná kuchyňa, matcha sladkosti, trh Nishiki Market.</p>
+                    <p><strong>Kanazawa:</strong> Kaisen-don s čerstvými morskými plodmi z Japonského mora, zlatá zmrzlina.</p>
+                    <p><strong>Takayama:</strong> Hida hovädzie (wagyu) - od pouličného jedla po luxusné steaky.</p>
+                </div>
+                
+                <div class="card">
+                    <h3 style="color: var(--secondary-color);">🏛️ UNESCO a Kultúrne Poklady</h3>
+                    <p><strong>Nikkó:</strong> Komplex svätýň Tōshōgū, Futarasan, Rinnoji. Červený most Shinkyo.</p>
+                    <p><strong>Kjóto:</strong> Kiyomizu-dera, Kinkaku-ji (Zlatý pavilón), les Arashiyama.</p>
+                    <p><strong>Nara:</strong> Chrám Todai-ji s obrovskou bronzovou sochou Budhu. Voľne sa túlajúce jelene.</p>
+                    <p><strong>Himeji:</strong> "Hrad bielej volavky" - najkrajší originálny hrad Japonska.</p>
+                    <p><strong>Shirakawa-go:</strong> Tradičné gassho-zukuri domy so slamenými strechami.</p>
+                </div>
+                
+                <div class="card">
+                    <h3 style="color: var(--primary-color);">🍂 Optimálne Načasovanie</h3>
+                    <p><strong>Ideálny termín:</strong> 10. - 26. november pre sledovanie kōyō zensen (frontu jesenného lístia).</p>
+                    <p><strong>Horské oblasti</strong> (Nikkó, Takayama): Skoršie farby, chladnejšie počasie.</p>
+                    <p><strong>Nížiny</strong> (Kjóto, Tokio): Neskorší vrchol farbenia, miernejšie teploty.</p>
+                    <p><strong>Výhľadky:</strong> Irohazaka v Nikkó, vyhliadka Shiroyama v Shirakawa-go, Arashiyama v Kjóte.</p>
+                </div>
+            </div>
+            
+            <div class="card" style="margin-top: 30px;">
+                <h3>📋 Kontrolný Zoznam Príprav</h3>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
+                    <div>
+                        <h4 style="color: var(--primary-color);">🎯 4-6 Mesiacov Vopred</h4>
+                        <ul>
+                            <li>Rezervácia luxusných ryokanov (až 12 mesiacov pre top-tier)</li>
+                            <li>Rezervácia výškového hotela v Tokiu</li>
+                            <li>Rezervácia všetkých budget ubytovaní</li>
+                            <li>Rezervácia autobusov Nohi Bus (Kanazawa-Shirakawa-Takayama)</li>
+                        </ul>
+                        
+                        <h4 style="color: var(--secondary-color);">✈️ 1-2 Mesiace Vopred</h4>
+                        <ul>
+                            <li>Zakúpenie eSIM kariet</li>
+                            <li>Nákup Shinkansen lístkov online</li>
+                            <li>Kontrola počasia a úprava oblečenia</li>
+                            <li>Stiahnutie offline máp a prekladačov</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 style="color: var(--primary-color);">📱 Po Prílete</h4>
+                        <ul>
+                            <li>Zakúpenie IC karty (Suica/Pasmo) na letisku</li>
+                            <li>Aktivácia eSIM kariet</li>
+                            <li>Výmena peňazí v bankomate 7-Eleven</li>
+                            <li>Zakúpenie Hakone Free Pass v Odaware</li>
+                        </ul>
+                        
+                        <h4 style="color: var(--secondary-color);">🎒 Deň 12 - Kanazawa</h4>
+                        <ul>
+                            <li>Odoslanie hlavnej batožiny Takkyubin do Tokia</li>
+                            <li>Prepakenie len nevyhnutného do malého batohu</li>
+                            <li>Rezervácia preposielania cez recepciu hotela</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="zhrnutie">
+             <div class="card" style="text-align:center;">
+                <h2>Vaša Cesta Čaká</h2>
+                <p>Tento itinerár transformuje štandardnú cestu po Japonsku na hlboký a tematicky ucelený zážitok, dokonale prispôsobený kráse jesennej sezóny. Je finančne efektívny, logisticky premyslený a harmonicky kombinuje ikonické destinácie s autentickými regiónmi. Japonsko na jeseň je magické a táto cesta je pripravená odhaliť vám to najlepšie z jeho kultúry, gastronómie a dychberúcich prírodných scenérií.</p>
+            </div>
+        </section>
+
+    </main>
+    
+    <footer>
+        <p>Itinerár vytvorený na mieru | Jeseň v Japonsku 2025</p>
+    </footer>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdhC2dODOGZEt8sQGmT2a1RaATvXr3hzI&callback=initMap"></script>
+    <script>
+        let map;
+        let markers = {};
+        let directionsService;
+        let directionsRenderer;
+        let currentActiveMarker = null;
+
+        const locations = {
+            tokyo: { 
+                lat: 35.6764, 
+                lng: 139.6500, 
+                title: "Tokio",
+                description: "Začiatok a koniec cesty - Moderná metropola"
+            },
+            nikko: { 
+                lat: 36.7487, 
+                lng: 139.5993, 
+                title: "Nikkó",
+                description: "Posvätné hory a UNESCO svätyne"
+            },
+            hakone: { 
+                lat: 35.2341, 
+                lng: 139.1084, 
+                title: "Hakone",
+                description: "Umenie, príroda a luxusný ryokan zážitok"
+            },
+            kyoto: { 
+                lat: 35.0116, 
+                lng: 135.7681, 
+                title: "Kjóto",
+                description: "Srdce tradičného Japonska"
+            },
+            himeji: { 
+                lat: 34.8394, 
+                lng: 134.6939, 
+                title: "Himeji",
+                description: "Hrad bielej volavky - najkrajší japonský hrad"
+            },
+            kanazawa: { 
+                lat: 36.5613, 
+                lng: 136.6562, 
+                title: "Kanazawa",
+                description: "Záhrady a samuraje štvrte"
+            },
+            shirakawa: { 
+                lat: 36.2570, 
+                lng: 136.9049, 
+                title: "Shirakawa-go",
+                description: "UNESCO dedinka s tradičnými gassho-zukuri domami"
+            },
+            takayama: { 
+                lat: 36.1460, 
+                lng: 137.2523, 
+                title: "Takayama",
+                description: "Alpská atmosféra a Hida hovädzie mäso"
+            }
+        };
+
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 7,
+                center: { lat: 35.6764, lng: 137.0 },
+                styles: [
+                    {
+                        featureType: "water",
+                        elementType: "geometry",
+                        stylers: [{ color: "#4682B4" }]
+                    },
+                    {
+                        featureType: "landscape",
+                        elementType: "geometry",
+                        stylers: [{ color: "#f8f9fa" }]
+                    }
+                ]
+            });
+
+            directionsService = new google.maps.DirectionsService();
+            directionsRenderer = new google.maps.DirectionsRenderer({
+                suppressMarkers: true,
+                polylineOptions: {
+                    strokeColor: '#B22222',
+                    strokeWeight: 4
+                }
+            });
+            directionsRenderer.setMap(map);
+
+            createMarkers();
+            showRoute();
+        }
+
+        function createMarkers() {
+            Object.keys(locations).forEach((key, index) => {
+                const location = locations[key];
+                const marker = new google.maps.Marker({
+                    position: { lat: location.lat, lng: location.lng },
+                    map: map,
+                    title: location.title,
+                    label: {
+                        text: String(index + 1),
+                        color: 'white',
+                        fontWeight: 'bold'
+                    },
+                    icon: {
+                        path: google.maps.SymbolPath.CIRCLE,
+                        scale: 20,
+                        fillColor: '#B22222',
+                        fillOpacity: 1,
+                        strokeColor: 'white',
+                        strokeWeight: 3
+                    }
+                });
+
+                const infoWindow = new google.maps.InfoWindow({
+                    content: `
+                        <div style="padding: 10px; font-family: 'Lato', sans-serif;">
+                            <h3 style="margin: 0 0 8px 0; color: #B22222;">${location.title}</h3>
+                            <p style="margin: 0; color: #333;">${location.description}</p>
+                        </div>
+                    `
+                });
+
+                marker.addListener('click', () => {
+                    if (currentActiveMarker) {
+                        currentActiveMarker.close();
+                    }
+                    infoWindow.open(map, marker);
+                    currentActiveMarker = infoWindow;
+                });
+
+                markers[key] = { marker, infoWindow };
+            });
+        }
+
+        function showRoute() {
+            const waypoints = [
+                { location: locations.nikko.lat + ',' + locations.nikko.lng },
+                { location: locations.hakone.lat + ',' + locations.hakone.lng },
+                { location: locations.kyoto.lat + ',' + locations.kyoto.lng },
+                { location: locations.himeji.lat + ',' + locations.himeji.lng },
+                { location: locations.kanazawa.lat + ',' + locations.kanazawa.lng },
+                { location: locations.shirakawa.lat + ',' + locations.shirakawa.lng },
+                { location: locations.takayama.lat + ',' + locations.takayama.lng }
+            ];
+
+            directionsService.route({
+                origin: locations.tokyo.lat + ',' + locations.tokyo.lng,
+                destination: locations.tokyo.lat + ',' + locations.tokyo.lng,
+                waypoints: waypoints,
+                travelMode: google.maps.TravelMode.DRIVING
+            }, (result, status) => {
+                if (status === 'OK') {
+                    directionsRenderer.setDirections(result);
+                }
+            });
+        }
+
+        function highlightLocation(locationKey) {
+            if (markers[locationKey]) {
+                const marker = markers[locationKey].marker;
+                const infoWindow = markers[locationKey].infoWindow;
+                
+                if (currentActiveMarker && currentActiveMarker !== infoWindow) {
+                    currentActiveMarker.close();
+                }
+                
+                map.panTo(marker.getPosition());
+                map.setZoom(10);
+                infoWindow.open(map, marker);
+                currentActiveMarker = infoWindow;
+                
+                marker.setAnimation(google.maps.Animation.BOUNCE);
+                setTimeout(() => {
+                    marker.setAnimation(null);
+                }, 1500);
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const accordionHeaders = document.querySelectorAll('.accordion-header');
+            const accordionItems = document.querySelectorAll('.accordion-item');
+
+            accordionHeaders.forEach(header => {
+                header.addEventListener('click', function () {
+                    const currentlyActiveHeader = document.querySelector('.accordion-header.active');
+                    if (currentlyActiveHeader && currentlyActiveHeader !== this) {
+                        currentlyActiveHeader.classList.remove('active');
+                        currentlyActiveHeader.nextElementSibling.style.maxHeight = 0;
+                        currentlyActiveHeader.nextElementSibling.style.paddingTop = 0;
+                        currentlyActiveHeader.nextElementSibling.style.paddingBottom = 0;
+                    }
+
+                    this.classList.toggle('active');
+                    const accordionContent = this.nextElementSibling;
+
+                    if (accordionContent.style.maxHeight) {
+                        accordionContent.style.maxHeight = null;
+                        accordionContent.style.paddingTop = null;
+                        accordionContent.style.paddingBottom = null;
+                    } else {
+                        accordionContent.style.maxHeight = accordionContent.scrollHeight + "px";
+                        accordionContent.style.paddingTop = "15px";
+                        accordionContent.style.paddingBottom = "15px";
+                    }
+
+                    const locationKey = this.parentElement.getAttribute('data-location');
+                    if (locationKey && typeof highlightLocation === 'function') {
+                        setTimeout(() => highlightLocation(locationKey), 300);
+                    }
+                });
+            });
+
+            accordionItems.forEach(item => {
+                item.addEventListener('click', function(e) {
+                    if (!e.target.classList.contains('accordion-header')) {
+                        const locationKey = this.getAttribute('data-location');
+                        if (locationKey && typeof highlightLocation === 'function') {
+                            highlightLocation(locationKey);
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>

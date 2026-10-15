@@ -1,0 +1,1101 @@
+[
+  {
+    "date": "2026-10-13",
+    "n": 0,
+    "city": "Viedeň → Japonsko",
+    "kanji": "旅",
+    "title": "Odlet z Viedne",
+    "sleep": null,
+    "items": [
+      {
+        "t": "08:30",
+        "title": "Byť na letisku Viedeň",
+        "note": "Terminál 1A. Pas, karty, nabitý telefón."
+      },
+      {
+        "t": "11:25",
+        "title": "Odlet CI 064 → Taipei",
+        "note": "Prílet do Taipei 05:30 miestneho času.",
+        "status": "ok",
+        "links": [
+          {
+            "label": "E-mail: let",
+            "url": "gmail:1855923984926430368"
+          }
+        ]
+      },
+      {
+        "t": "",
+        "title": "Pred odletom skontrolovať",
+        "note": "Visit Japan Web QR, eSIM nainštalovaná, Suica v Peňaženke. Zoznam je v záložke Príprava.",
+        "goto": "prep"
+      }
+    ]
+  },
+  {
+    "date": "2026-10-14",
+    "n": 1,
+    "city": "Tokio",
+    "kanji": "東京",
+    "title": "Prílet a prvý nádych Shinjuku",
+    "sleep": "tokyo",
+    "items": [
+      {
+        "t": "08:50",
+        "title": "Let CI 100 Taipei → Tokio Narita",
+        "note": "Terminál 2 v Taipei.",
+        "status": "ok"
+      },
+      {
+        "t": "13:15",
+        "title": "Prílet Narita, Terminál 2",
+        "note": "Imigrácia, eSIM, hotovosť, Suica. Celý postup krok za krokom je v Príprave.",
+        "goto": "prep",
+        "places": [
+          "visit_japan_web",
+          "e_sim",
+          "suica_apple_wallet"
+        ]
+      },
+      {
+        "t": "14:45",
+        "title": "Narita Express do Shinjuku",
+        "note": "Cca 80 minút do Shinjuku, lístok s miestenkou v JR automate. Potom JR Yamanote 1 zastávka do Shin-Ōkubo.",
+        "maps": "Narita Airport Terminal 2 Station"
+      },
+      {
+        "t": "16:30",
+        "title": "Ubytovanie Airbnb Shinjuku",
+        "note": "Na hoteli okolo 16:30–17:00. Krátky oddych.",
+        "hotel": "tokyo"
+      },
+      {
+        "t": "17:30",
+        "title": "Tokyo Metropolitan Government Building",
+        "note": "Vyhliadka zadarmo, kúsok od stanice. Večerný pohľad na mesto, slnko zapadá 17:07.",
+        "places": [
+          "tokyo_metropolitan_government_building"
+        ]
+      },
+      {
+        "t": "18:30",
+        "title": "The Giant 3D Cat",
+        "note": "Cross Shinjuku Vision, cestou zo stanice do ulíc.",
+        "places": [
+          "cross_shinjuku_vision"
+        ]
+      },
+      {
+        "t": "19:00",
+        "title": "Godzilla Head",
+        "note": "Kabukicho. Len prejsť okolo, svieti do diaľky.",
+        "places": [
+          "godzilla_head_kabukicho"
+        ]
+      },
+      {
+        "t": "19:30",
+        "title": "Večera: Omoide Yokocho",
+        "note": "Atmosféra starého Tokia. Pár yakitori a pivo alebo highball na privítanie.",
+        "places": [
+          "omoide_yokocho"
+        ]
+      },
+      {
+        "t": "20:20",
+        "title": "Alternatíva: Shibuya Sky 20:20–20:39",
+        "note": "Nekúpené. Jediný nájdený voľný termín pre 4. Vyžaduje skoršiu večeru a presun do Shibuye.",
+        "status": "todo",
+        "places": [
+          "shibuya_sky"
+        ],
+        "links": [
+          {
+            "label": "Lístky Shibuya Sky",
+            "url": "https://www.shibuya-scramble-square.com/sky/ticket/"
+          }
+        ]
+      },
+      {
+        "t": "21:00",
+        "title": "Polnočný snack: Ramen Nagi",
+        "note": "Sugoi Niboshi Rāmen Nagi v uličke Golden Gai. Ak je rad, dá sa prísť kedykoľvek v noci.",
+        "places": [
+          "sugoi_niboshi_ramen_nagi"
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2026-10-15",
+    "n": 2,
+    "city": "Tokio",
+    "kanji": "東京",
+    "title": "Meiji Jingu, Ebisu a Shibuya",
+    "sleep": "tokyo",
+    "items": [
+      {
+        "t": "09:00",
+        "title": "Meiji Jingu",
+        "note": "Prechádzka lesom k svätyni, hneď pri stanici Harajuku. V októbri je areál otvorený cca 5:40–16:40. Múzeum Meiji Jingū je vo štvrtok zatvorené.",
+        "places": [
+          "meiji_jingu"
+        ]
+      },
+      {
+        "t": "10:30",
+        "title": "Togo Shrine alebo Yoyogi Park",
+        "note": "Pokojná záhrada alebo relax v parku. Takeshita Street vynechávame.",
+        "places": [
+          "togo_shrine",
+          "yoyogi_park"
+        ]
+      },
+      {
+        "t": "13:00",
+        "title": "Obed: Shodai, Ebisu",
+        "note": "Známe biele kari udon. Rátať s radom. Z Harajuku linkou Yamanote na Ebisu.",
+        "places": [
+          "shodai_ebisu"
+        ],
+        "maps": "1 Chome-1-10 Ebisuminami, Shibuya, Tokyo"
+      },
+      {
+        "t": "15:30",
+        "title": "Shibuya Crossing",
+        "note": "Najslávnejšia križovatka. Káva v Starbucks na 2F budovy SHIBUYA TSUTAYA, ak chytíte miesto (po rekonštrukcii z 2024 asi 100 miest, 1F je iba take-away). Výhľad zadarmo: presklená chodba Shibuya Mark City s nástennou maľbou Tara Okamota.",
+        "places": [
+          "shibuya_crossing",
+          "starbucks_shibuya_crossing"
+        ]
+      },
+      {
+        "t": "Večer",
+        "title": "Shibuya Sky – nekúpené",
+        "note": "Na tento deň sa termín pre 4 nepodarilo kúpiť. Skús ráno a cez obed znova pozrieť oficiálny web, občas sa uvoľnia vrátené sloty. Na 14F sa na mieste predáva len to, čo nie je vypredané online. Západ slnka 17:06. Inak večer voľne v Shibuyi.",
+        "status": "todo",
+        "places": [
+          "shibuya_sky"
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "n": 3,
+    "city": "Tokio",
+    "kanji": "東京",
+    "title": "Asakusa, teamLab a Tokyo Tower",
+    "sleep": "tokyo",
+    "items": [
+      {
+        "t": "08:00",
+        "title": "Sensō-ji, Asakusa",
+        "note": "Byť tam skoro, kým nie sú davy.",
+        "places": [
+          "senso_ji"
+        ]
+      },
+      {
+        "t": "09:30",
+        "title": "Snack na Nakamise",
+        "note": "Melon pan a Mont Blanc zmrzlina. Pozor: hlavná predajňa Asakusa Kagetsudo (jumbo melon pan) aj Kuriho otvárajú v piatok až o 11:00. O 09:30 skôr Asakusa-jinja vedľa chrámu a pokojná Nakamise so zatvorenými maľovanými roletami; snacky o 11:00 a ramen hneď po nich. Na Nakamise sa nejedáva za chôdze, zjedz to pri stánku.",
+        "places": [
+          "nakamise_street",
+          "asakusa_mont_blanc_ice_cream"
+        ]
+      },
+      {
+        "t": "11:30",
+        "title": "Skorý obed: Fuji Ramen",
+        "note": "V Asakuse. Najesť sa pred presunom na teamLab.",
+        "places": [
+          "fuji_ramen"
+        ]
+      },
+      {
+        "t": "13:00",
+        "title": "Presun metrom na juh",
+        "note": "Linka Ginza smerom k Azabudai Hills."
+      },
+      {
+        "t": "14:00",
+        "title": "teamLab Borderless",
+        "note": "Vstup 14:00–14:30, kúpené pre 2. Nová lokalita Azabudai Hills, nie Odaiba. Cca 2–3 hodiny.",
+        "status": "ok",
+        "places": [
+          "teamlab_borderless"
+        ],
+        "links": [
+          {
+            "label": "E-mail: lístky",
+            "url": "gmail:1873789618712530909"
+          }
+        ]
+      },
+      {
+        "t": "17:15",
+        "title": "Príchod do Tokyo Tower",
+        "note": "Západ slnka 17:05, takže pri príchode 17:15 už bude po ňom; ak chcete zlatú hodinu, treba prísť skôr. Foto: park Prince Shiba alebo chrám Zōjō-ji.",
+        "places": [
+          "tokyo_tower",
+          "prince_shiba_park",
+          "zojoji_temple"
+        ]
+      },
+      {
+        "t": "17:45",
+        "title": "Tokyo Tower Top Deck",
+        "note": "Zaplatené pre 4. Byť pri Top Deck Gate na Main Deck 2F pred 17:45.",
+        "status": "ok",
+        "places": [
+          "tokyo_tower"
+        ],
+        "links": [
+          {
+            "label": "E-mail",
+            "url": "gsearch:Tokyo Tower Top Deck"
+          }
+        ]
+      },
+      {
+        "t": "Večer",
+        "title": "Ginza alebo návrat do Shinjuku",
+        "note": "Prechádzka po luxusnej ulici.",
+        "places": [
+          "ginza"
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2026-10-17",
+    "n": 4,
+    "city": "Tokio",
+    "kanji": "東京",
+    "title": "Tsukiji, nože a pokojný záver Tokia",
+    "sleep": "tokyo",
+    "alerts": [
+      "Zajtra o 07:50 odchádza vlak z Asakusy. Večer zbaliť malý batoh na 1 noc, veľký kufor poslať do Kjóta."
+    ],
+    "items": [
+      {
+        "t": "08:00",
+        "title": "Tsukiji Outer Market",
+        "note": "Raňajky: sushi a street food podľa chuti.",
+        "places": [
+          "tsukiji_outer_market"
+        ]
+      },
+      {
+        "t": "09:30",
+        "title": "Tsukiji Masamoto – nože",
+        "note": "Nôž dať do podanej batožiny, nie do príručnej.",
+        "places": [
+          "tsukiji_masamoto"
+        ]
+      },
+      {
+        "t": "11:00",
+        "title": "Hama-rikyu Gardens",
+        "note": "Pokojná prechádzka a čajovňa na jazere.",
+        "places": [
+          "hamarikyu_gardens"
+        ]
+      },
+      {
+        "t": "13:30",
+        "title": "Návrat do Shinjuku",
+        "note": "Oddych, menší nákup v konbini."
+      },
+      {
+        "t": "15:00",
+        "title": "Shinjuku Gyoen",
+        "note": "Pozor: posledný vstup 16:00, zatvára sa 16:30.",
+        "status": "warn",
+        "places": [
+          "shinjuku_gyoen"
+        ]
+      },
+      {
+        "t": "Večer",
+        "title": "Balenie na Nikkó + kufor do Kjóta",
+        "note": "Veľký kufor poslať takkyūbinom do hotela Miyako City Kintetsu Kyoto Station (príchod 19. 10.). Do hôr len batoh na 1 noc.",
+        "places": [
+          "luggage_forwarding"
+        ],
+        "hotel": "kyoto"
+      },
+      {
+        "t": "Večer",
+        "title": "Posledná šanca: Ramen Nagi",
+        "note": "Ak ste ho nestihli prvý večer.",
+        "places": [
+          "sugoi_niboshi_ramen_nagi"
+        ]
+      },
+      {
+        "t": "18:00",
+        "title": "Voliteľne: jedno dejstvo v Kabukiza",
+        "note": "Iba ak ostane energia. Lístok nekúpený.",
+        "status": "opt",
+        "places": [
+          "kabukiza_tokyo"
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2026-10-18",
+    "n": 5,
+    "city": "Nikkó",
+    "kanji": "日光",
+    "title": "Tōshōgū a cesta do divočiny",
+    "sleep": "nikko",
+    "alerts": [
+      "Kritický deň: o 13:25 musíte byť na autobuse v Kinugawa Onsen. Mať hotovosť na autobus (cca 1 500–2 000 JPY/os.)."
+    ],
+    "items": [
+      {
+        "t": "07:50",
+        "title": "SPACIA X 001 · Asakusa → Tobu-Nikkó",
+        "note": "Vozeň 4, sedadlá 12C, 12D, 13C, 13D. Príchod 09:39. Raňajky (bento) vo vlaku.",
+        "status": "ok",
+        "places": [
+          "tobu_limited_express"
+        ],
+        "maps": "Tobu Asakusa Station",
+        "links": [
+          {
+            "label": "E-mail",
+            "url": "gsearch:SPACIA X"
+          }
+        ]
+      },
+      {
+        "t": "09:39",
+        "title": "Príchod Tobu-Nikkó",
+        "note": "Taxík alebo World Heritage Bus (zastávka 2B) ku svätyniam.",
+        "places": [
+          "tobu_nikko_station"
+        ]
+      },
+      {
+        "t": "10:00",
+        "title": "Tōshōgū (UNESCO)",
+        "note": "Skrátená návšteva: brána Yomeimon, Spiaca mačka (Nemuri-neko), hrobka Ieyasu ak stíhate. Rinnō-ji a Futarasan len prebehnúť.",
+        "places": [
+          "toshogu_shrine",
+          "rinnoji_temple",
+          "futarasan_shrine"
+        ]
+      },
+      {
+        "t": "11:10",
+        "title": "Späť na stanici Tobu-Nikkó",
+        "note": "Kúpiť obed do ruky, napr. Yuba Manju.",
+        "status": "warn"
+      },
+      {
+        "t": "11:24",
+        "title": "Vlak Tobu-Nikkó → Shimo-Imaichi",
+        "note": "11:24 → 11:33, prestup na 11:43 → Kinugawa Onsen 12:08.",
+        "places": [
+          "shimo_imaichi_station",
+          "kinugawa_onsen_station"
+        ]
+      },
+      {
+        "t": "13:25",
+        "title": "Mestský bus → Meotobuchi Onsen",
+        "note": "Nikko Municipal Bus pred stanicou Kinugawa Onsen. Cca 1 h 40 min kľukatou cestou. Často len hotovosť.",
+        "status": "warn",
+        "places": [
+          "nikko_municipal_bus"
+        ],
+        "maps": "Kinugawa Onsen Station"
+      },
+      {
+        "t": "15:00",
+        "title": "Shuttle Meotobuchi → Hatcho-no-yu",
+        "note": "Potvrdený hotelom pre 4. Cesta lesom cca 30 minút.",
+        "status": "ok",
+        "places": [
+          "meotobuchi_bus_stop"
+        ]
+      },
+      {
+        "t": "15:30",
+        "title": "Check-in Hatcho-no-yu",
+        "note": "Onsen pod vodopádom. Dámy dostanú uterák na zahalenie. Večera: divina a horská kuchyňa pri krbe.",
+        "places": [
+          "haccho_no_yu"
+        ],
+        "hotel": "nikko"
+      }
+    ]
+  },
+  {
+    "date": "2026-10-19",
+    "n": 6,
+    "city": "Nikkó → Kjóto",
+    "kanji": "日光",
+    "title": "Ráno v horách a presun do Kjóta",
+    "sleep": "kyoto",
+    "alerts": [
+      "Ranný odvoz o 07:00 ešte nie je potvrdený hotelom. Záloha: shuttle 09:00 a bus 09:50 – stále stihnete vlak 11:59."
+    ],
+    "items": [
+      {
+        "t": "07:00",
+        "title": "Odchod z Hatcho-no-yu",
+        "note": "Plán, treba potvrdiť hotelom. Dohodnúť skoré raňajky alebo balíček.",
+        "status": "todo",
+        "places": [
+          "haccho_no_yu"
+        ]
+      },
+      {
+        "t": "07:45",
+        "title": "Bus Meotobuchi → Kinugawa Onsen",
+        "note": "Príchod 09:20. Záloha: bus 09:50 → 11:25. Mať hotovosť.",
+        "places": [
+          "meotobuchi_bus_stop",
+          "nikko_municipal_bus"
+        ]
+      },
+      {
+        "t": "11:40",
+        "title": "Byť na stanici Kinugawa Onsen",
+        "note": "Pri skorom variante je čas na oddych a jedlo.",
+        "places": [
+          "kinugawa_onsen_station"
+        ]
+      },
+      {
+        "t": "11:59",
+        "title": "Revaty Aizu 128 · Kinugawa Onsen → Asakusa",
+        "note": "Vozeň 4, sedadlá 06A, 06B, 06C, 06D. Príchod 14:15.",
+        "status": "ok",
+        "places": [
+          "tobu_limited_express"
+        ],
+        "links": [
+          {
+            "label": "E-mail",
+            "url": "gsearch:Revaty"
+          }
+        ]
+      },
+      {
+        "t": "14:15",
+        "title": "Asakusa → Tokyo Station",
+        "note": "Linka Ginza, potom Marunouchi. Rátať 45–60 min. Potom obed a batožina.",
+        "places": [
+          "tokyo_station"
+        ],
+        "maps": "Tokyo Station"
+      },
+      {
+        "t": "17:00",
+        "title": "Byť na nástupišti Shinkansenu",
+        "note": "Najneskôr okolo 17:00."
+      },
+      {
+        "t": "17:30",
+        "title": "NOZOMI 55 · Tokio → Kjóto",
+        "note": "Vozeň 5, sedadlá 4D a 4E (2 os.). Lístky ďalších dvoch overiť. Príchod 19:44.",
+        "status": "ok",
+        "places": [
+          "nozomi_shinkansen"
+        ],
+        "links": [
+          {
+            "label": "E-mail",
+            "url": "gsearch:NOZOMI 55"
+          }
+        ]
+      },
+      {
+        "t": "20:00",
+        "title": "Check-in Miyako City Kintetsu Kyoto Station",
+        "note": "Hneď pri stanici. Ak ste poslali kufor, čaká na recepcii.",
+        "places": [
+          "kyoto_station"
+        ],
+        "hotel": "kyoto"
+      }
+    ]
+  },
+  {
+    "date": "2026-10-20",
+    "n": 7,
+    "city": "Kjóto",
+    "kanji": "京都",
+    "title": "Fushimi Inari, Zlatý pavilón a mochi",
+    "sleep": "kyoto",
+    "alerts": [
+      "Poradie dní v Kjóte je prehodené: cukráreň Ichimonjiya Wasuke má v stredu 21. 10. zatvorené."
+    ],
+    "items": [
+      {
+        "t": "07:30",
+        "title": "Fushimi Inari Taisha",
+        "note": "Ranný výšľap cez tisíce brán torii, cca 1,5 hodiny.",
+        "places": [
+          "fushimi_inari"
+        ]
+      },
+      {
+        "t": "10:30",
+        "title": "Presun na sever mesta",
+        "note": "Vlak a autobus, dlhší presun."
+      },
+      {
+        "t": "12:00",
+        "title": "Kinkaku-ji – Zlatý pavilón",
+        "note": "Hneď pri ceste za cukrárňou.",
+        "places": [
+          "kinkaku_ji"
+        ]
+      },
+      {
+        "t": "13:30",
+        "title": "Ichimonjiya Wasuke",
+        "note": "Highlight: najstaršia cukráreň. Aburi mochi a čaj.",
+        "places": [
+          "ichimonjiya_wasuke"
+        ]
+      },
+      {
+        "t": "15:00",
+        "title": "Imamiya-jinja",
+        "note": "Svätyňa hneď pri cukrárni.",
+        "places": [
+          "imamiya_jinja"
+        ]
+      },
+      {
+        "t": "Večer",
+        "title": "Honke Daiichi-Asahi",
+        "note": "Ramen pri stanici. Pozor: susedný Shinpuku Saikan je 20.–21. 10. zatvorený.",
+        "places": [
+          "honke_daiichi_asahi",
+          "shinpuku_saikan"
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2026-10-21",
+    "n": 8,
+    "city": "Kjóto",
+    "kanji": "京都",
+    "title": "Kiyomizu, staré uličky a Gion",
+    "sleep": "kyoto",
+    "items": [
+      {
+        "t": "07:00",
+        "title": "Kiyomizu-dera",
+        "note": "Must-do: ísť skoro ráno. Neskôr je tam peklo.",
+        "places": [
+          "kiyomizu_dera"
+        ]
+      },
+      {
+        "t": "09:00",
+        "title": "Sannenzaka a Ninenzaka",
+        "note": "Pomalá prechádzka starými uličkami dole kopcom.",
+        "places": [
+          "sannenzaka",
+          "ninenzaka"
+        ]
+      },
+      {
+        "t": "10:30",
+        "title": "Kōdai-ji",
+        "places": [
+          "kodaiji_temple"
+        ]
+      },
+      {
+        "t": "12:00",
+        "title": "Yasaka Shrine a obed v Gione",
+        "places": [
+          "yasaka_shrine",
+          "gion"
+        ]
+      },
+      {
+        "t": "13:30",
+        "title": "Chion-in",
+        "note": "Obrovská brána Sanmon.",
+        "places": [
+          "chionin_temple"
+        ]
+      },
+      {
+        "t": "Poobede",
+        "title": "Túlanie sa po Gione",
+        "places": [
+          "gion"
+        ]
+      },
+      {
+        "t": "Večer",
+        "title": "Večera: Ramen Beast",
+        "note": "Konkrétnu pobočku a hodiny overiť.",
+        "places": [
+          "ramen_beast"
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2026-10-22",
+    "n": 9,
+    "city": "Kjóto → Nara → Osaka",
+    "kanji": "奈良",
+    "title": "Nara a prvý večer v Osake",
+    "sleep": "osaka1",
+    "items": [
+      {
+        "t": "07:44",
+        "title": "Kintetsu Kyoto → Kintetsu-Nara",
+        "note": "Priamy expres 07:44 → 08:35, ďalší priamy o 08:45. Check-out z hotela pred odchodom.",
+        "maps": "Kintetsu Kyoto Station"
+      },
+      {
+        "t": "09:00",
+        "title": "Batožina do skrinky",
+        "note": "Coin locker na stanici Kintetsu-Nara.",
+        "places": [
+          "kintetsu_nara_station"
+        ]
+      },
+      {
+        "t": "09:30",
+        "title": "Tōdai-ji – Veľký Budha",
+        "note": "Anti-jeleň taktika: taxík zo stanice priamo pred chrám. Jelene sa úplne vylúčiť nedajú.",
+        "places": [
+          "todaiji_temple"
+        ]
+      },
+      {
+        "t": "11:00",
+        "title": "Späť cez pasáž Higashimuki",
+        "note": "Krytá pasáž, na konci Nakatanidou mochi.",
+        "places": [
+          "higashimuki_shopping_street",
+          "nakatanidou"
+        ]
+      },
+      {
+        "t": "12:00",
+        "title": "Vlak do Osaky",
+        "note": "Kintetsu do Namby."
+      },
+      {
+        "t": "13:00",
+        "title": "BOOK AND BED Shinsaibashi",
+        "note": "Odložiť batožinu, check-in od 16:00.",
+        "hotel": "osaka1"
+      },
+      {
+        "t": "Poobede",
+        "title": "Osaka Castle",
+        "note": "Stačí zvonku, park je pekný.",
+        "places": [
+          "osaka_castle"
+        ]
+      },
+      {
+        "t": "Večer",
+        "title": "Dōtonbori",
+        "note": "Neóny, Glico Man, takoyaki a okonomiyaki.",
+        "places": [
+          "dotonbori"
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2026-10-23",
+    "n": 10,
+    "city": "Osaka",
+    "kanji": "大阪",
+    "title": "Shinsekai, ramen a Umeda",
+    "sleep": "osaka1",
+    "items": [
+      {
+        "t": "Doobeda",
+        "title": "Shinsekai a Tsūtenkaku",
+        "note": "Retro štvrť a veža.",
+        "places": [
+          "shinsekai",
+          "tsutenkaku"
+        ]
+      },
+      {
+        "t": "10:30",
+        "title": "Voliteľne: Shitennō-ji",
+        "note": "Chrám kúsok pešo, ak chcete históriu.",
+        "status": "opt",
+        "places": [
+          "shitennoji"
+        ]
+      },
+      {
+        "t": "12:30",
+        "title": "Obed: Ramen Nagomi, Amagasaki",
+        "note": "Z Umedy linkou Hanshin na stanicu Mukogawa, cca 20 minút. Špičkový ramen.",
+        "places": [
+          "ramen_nagomi",
+          "mukogawa_station"
+        ],
+        "maps": "2-chome-19-3 Mukogawacho, Amagasaki"
+      },
+      {
+        "t": "Poobede",
+        "title": "Umeda Sky Building",
+        "note": "Cestou späť vystúpiť na Umeda.",
+        "places": [
+          "umeda_sky_building"
+        ]
+      },
+      {
+        "t": "Podvečer",
+        "title": "Nákupy: Umeda alebo Shinsaibashi",
+        "note": "Vybrať jednu štvrť.",
+        "places": [
+          "umeda",
+          "shinsaibashi"
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2026-10-24",
+    "n": 11,
+    "city": "Himeji → Hirošima",
+    "kanji": "広島",
+    "title": "Hrad Himeji a Hirošima",
+    "sleep": "hiroshima",
+    "alerts": [
+      "Miestenky na Shinkansen na dnes nie sú potvrdené. Overiť alebo kúpiť."
+    ],
+    "items": [
+      {
+        "t": "09:00",
+        "title": "Odchod zo Shin-Osaka",
+        "note": "Check-out z BOOK AND BED do 11:00, čiže pred odchodom.",
+        "places": [
+          "shin_osaka_station"
+        ]
+      },
+      {
+        "t": "09:17",
+        "title": "Shinkansen → Himeji",
+        "note": "Návrh: Nozomi 7 09:17 → 09:46, záloha Sakura 749 09:20. Batožina do skrinky v Himeji.",
+        "status": "todo",
+        "places": [
+          "himeji_station"
+        ]
+      },
+      {
+        "t": "10:00",
+        "title": "Himeji Castle – Biela volavka",
+        "note": "Najkrajší hrad. Strmé schody. 2 500 JPY, posledný vstup 16:00.",
+        "places": [
+          "himeji_castle"
+        ]
+      },
+      {
+        "t": "13:46",
+        "title": "Shinkansen → Hirošima",
+        "note": "Návrh: Sakura 757 13:46 → 14:52, záloha Sakura 759 o 14:46.",
+        "status": "todo",
+        "places": [
+          "hiroshima_station"
+        ]
+      },
+      {
+        "t": "15:00",
+        "title": "WeBase Hiroshima",
+        "note": "Check-in, odložiť veci.",
+        "hotel": "hiroshima"
+      },
+      {
+        "t": "16:00",
+        "title": "A-Bomb Dome a Mierový park",
+        "note": "Večerná prechádzka.",
+        "places": [
+          "atomic_bomb_dome",
+          "hiroshima_peace_park"
+        ]
+      },
+      {
+        "t": "Večera",
+        "title": "Okonomimura",
+        "note": "Hirošimské okonomiyaki s rezancami. Dajte si aj ustrice.",
+        "places": [
+          "okonomimura",
+          "hiroshima_oysters"
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2026-10-25",
+    "n": 12,
+    "city": "Miyajima → Osaka",
+    "kanji": "宮島",
+    "title": "Miyajima pomaly a návrat do Osaky",
+    "sleep": "osaka2",
+    "alerts": [
+      "Príliv okolo 08:55 (torii v vode), odliv okolo 15:02. Misen vynechať, nech je čas na pokojný návrat."
+    ],
+    "items": [
+      {
+        "t": "08:30",
+        "title": "Hirošima → Miyajimaguchi → trajekt",
+        "note": "Cca 30 min vlakom, trajekt 10 minút, chodí cca každých 15 min. Check-out z WeBase pred odchodom.",
+        "places": [
+          "miyajimaguchi",
+          "miyajima_ferry"
+        ]
+      },
+      {
+        "t": "09:30",
+        "title": "Itsukushima a staré uličky",
+        "note": "Pomaly pešo, nič netlačiť na výkon. Okolo 08:55 je príliv.",
+        "places": [
+          "itsukushima_shrine",
+          "miyajima",
+          "miyajima_old_streets"
+        ]
+      },
+      {
+        "t": "12:30",
+        "title": "Obed na ostrove",
+        "note": "Podnik vybrať na mieste."
+      },
+      {
+        "t": "14:00",
+        "title": "Daishō-in",
+        "note": "Druhé ťažisko dňa, stále na ostrove.",
+        "places": [
+          "daisho_in"
+        ]
+      },
+      {
+        "t": "15:02",
+        "title": "Torii pri odlive",
+        "note": "Prístup pod torii závisí od skutočnej hladiny, nie je zaručený.",
+        "places": [
+          "itsukushima_shrine"
+        ]
+      },
+      {
+        "t": "16:10",
+        "title": "Trajekt a vlak späť do Hirošimy",
+        "note": "Trajekt 16:10–16:25, JR o 16:44. Na stanici s rezervou 20–30 min.",
+        "places": [
+          "miyajima_ferry"
+        ]
+      },
+      {
+        "t": "17:43",
+        "title": "Shinkansen Hirošima → Shin-Osaka",
+        "note": "Návrh: Nozomi 50 17:43 → 18:59. Miestenky neoverené.",
+        "status": "todo"
+      },
+      {
+        "t": "19:30",
+        "title": "Check-in Candeo Hotels Namba",
+        "note": "Večer voľne, večera a oddych.",
+        "hotel": "osaka2"
+      }
+    ]
+  },
+  {
+    "date": "2026-10-26",
+    "n": 13,
+    "city": "Osaka",
+    "kanji": "大阪",
+    "title": "Sushi a Pokémoni",
+    "sleep": "osaka2",
+    "items": [
+      {
+        "t": "10:00",
+        "title": "Sushi kurz",
+        "note": "Nerezervované. Návrh: Sushi Making Japan, Shinsaibashi, cca 1,5 h, anglicky.",
+        "status": "todo",
+        "places": [
+          "sushi_making_class"
+        ],
+        "links": [
+          {
+            "label": "Sushi Making Japan",
+            "url": "https://sushimakingjapan.com/osaka"
+          }
+        ]
+      },
+      {
+        "t": "Poobede",
+        "title": "Varianta A – Umeda",
+        "note": "Nintendo OSAKA, Pokémon Center OSAKA, nákupy okolo.",
+        "places": [
+          "nintendo_osaka",
+          "pokemon_center_osaka"
+        ]
+      },
+      {
+        "t": "Poobede",
+        "title": "Varianta B – Shinsaibashi",
+        "note": "Pokémon Center OSAKA DX, prípadne Pokémon Café (treba rezerváciu).",
+        "places": [
+          "pokemon_center_osaka_dx",
+          "pokemon_cafe"
+        ]
+      },
+      {
+        "t": "Večer",
+        "title": "Hozenji Yokocho a Dōtonbori",
+        "note": "Malé izakaye v starých uličkách priamo v centre.",
+        "places": [
+          "hozenji_yokocho",
+          "dotonbori"
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2026-10-27",
+    "n": 14,
+    "city": "Uji a Kjóto",
+    "kanji": "宇治",
+    "title": "Zen, čaj a kaligrafia",
+    "sleep": "osaka2",
+    "items": [
+      {
+        "t": "Ráno",
+        "title": "Vlakom do Uji",
+        "note": "Medzi Osakou a Kjótom, cca 45 min. Hlavné mesto zeleného čaju matcha.",
+        "places": [
+          "uji"
+        ]
+      },
+      {
+        "t": "Doobeda",
+        "title": "Čajový obrad",
+        "note": "Napr. Taiho-an v historickom dome. Rezervácia nepotvrdená.",
+        "status": "todo",
+        "places": [
+          "taiho_an"
+        ]
+      },
+      {
+        "t": "Poobede",
+        "title": "Kjóto: Samurai Kenbu alebo kaligrafia",
+        "note": "Vybrať jedno, nie obe. Nerezervované.",
+        "status": "opt",
+        "places": [
+          "samurai_kenbu",
+          "calligraphy_workshop"
+        ]
+      },
+      {
+        "t": "Večer",
+        "title": "Návrat do Osaky",
+        "hotel": "osaka2"
+      }
+    ]
+  },
+  {
+    "date": "2026-10-28",
+    "n": 15,
+    "city": "Osaka",
+    "kanji": "大阪",
+    "title": "Pomalé lúčenie s Japonskom",
+    "sleep": "osaka2",
+    "items": [
+      {
+        "t": "Doobeda",
+        "title": "Chill okolo Kuromonu",
+        "note": "Wagyu na špajli, sashimi v bočných uličkách. Nie priamo Kuromon Market, to je tourist trap.",
+        "places": [
+          "kuromon_ichiba"
+        ]
+      },
+      {
+        "t": "17:00",
+        "title": "Sumo HIRAKUZA Osaka",
+        "note": "Namba Parks 8F. Patrik a Martin, štandardné miesta + bento a nápoj. Prísť pred 17:00.",
+        "status": "ok",
+        "maps": "Namba Parks, Osaka",
+        "links": [
+          {
+            "label": "E-mail",
+            "url": "gsearch:HIRAKUZA"
+          }
+        ]
+      },
+      {
+        "t": "19:00",
+        "title": "Voliteľne: rozlúčkové yakiniku",
+        "note": "Japonské BBQ pri stole. Potom zbaliť kufre.",
+        "status": "opt",
+        "places": [
+          "yakiniku"
+        ]
+      }
+    ]
+  },
+  {
+    "date": "2026-10-29",
+    "n": 16,
+    "city": "Osaka → domov",
+    "kanji": "旅",
+    "title": "Sayonara",
+    "sleep": null,
+    "items": [
+      {
+        "t": "11:00",
+        "title": "Check-out z Candeo",
+        "note": "Batožinu nechať na recepcii, ak chcete ešte ísť von.",
+        "hotel": "osaka2"
+      },
+      {
+        "t": "15:30",
+        "title": "Nankai Rapi:t z Namby na letisko",
+        "note": "Návrh. Hotel je v Nambe, Rapi:t ide priamo na KIX (cca 40 min). Príplatok s miestenkou.",
+        "places": [
+          "nankai_rapit",
+          "haruka_express"
+        ],
+        "maps": "Nankai Namba Station"
+      },
+      {
+        "t": "16:30",
+        "title": "Letisko Kansai, Terminál 1",
+        "note": "Odbavenie China Airlines.",
+        "places": [
+          "kansai_airport"
+        ]
+      },
+      {
+        "t": "19:00",
+        "title": "Odlet CI 173 → Taipei",
+        "note": "Prestup na CI 063 o 23:20, Viedeň 06:50 ďalší deň.",
+        "status": "ok",
+        "links": [
+          {
+            "label": "E-mail: let",
+            "url": "gmail:1855923984926430368"
+          }
+        ]
+      }
+    ]
+  }
+]

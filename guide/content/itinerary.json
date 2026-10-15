@@ -221,7 +221,7 @@
       {
         "t": "14:00",
         "title": "teamLab Borderless",
-        "note": "Vstup 14:00–14:30, kúpené pre 2. Nová lokalita Azabudai Hills, nie Odaiba. Cca 2–3 hodiny.",
+        "note": "Vstup 14:00–14:30, kúpené pre 2. Nachádza sa v Azabudai Hills. Cca 2–3 hodiny.",
         "status": "ok",
         "places": [
           "teamlab_borderless"
@@ -290,7 +290,7 @@
       {
         "t": "09:30",
         "title": "Tsukiji Masamoto – nože",
-        "note": "Nôž dať do podanej batožiny, nie do príručnej.",
+        "note": "Nôž zabaliť do podanej batožiny.",
         "places": [
           "tsukiji_masamoto"
         ]
@@ -616,7 +616,8 @@
         "title": "Kōdai-ji",
         "places": [
           "kodaiji_temple"
-        ]
+        ],
+        "note": ""
       },
       {
         "t": "12:00",
@@ -624,7 +625,8 @@
         "places": [
           "yasaka_shrine",
           "gion"
-        ]
+        ],
+        "note": ""
       },
       {
         "t": "13:30",
@@ -639,7 +641,8 @@
         "title": "Túlanie sa po Gione",
         "places": [
           "gion"
-        ]
+        ],
+        "note": ""
       },
       {
         "t": "Večer",
@@ -891,7 +894,7 @@
       {
         "t": "15:02",
         "title": "Torii pri odlive",
-        "note": "Prístup pod torii závisí od skutočnej hladiny, nie je zaručený.",
+        "note": "Pod torii sa dá prejsť pri dostatočne nízkej hladine; rozhodneme sa podľa odlivu na mieste.",
         "places": [
           "itsukushima_shrine"
         ]
@@ -998,7 +1001,7 @@
       {
         "t": "Poobede",
         "title": "Kjóto: Samurai Kenbu alebo kaligrafia",
-        "note": "Vybrať jedno, nie obe. Nerezervované.",
+        "note": "Vybrať a rezervovať jednu z týchto aktivít.",
         "status": "opt",
         "places": [
           "samurai_kenbu",
@@ -1008,7 +1011,8 @@
       {
         "t": "Večer",
         "title": "Návrat do Osaky",
-        "hotel": "osaka2"
+        "hotel": "osaka2",
+        "note": ""
       }
     ]
   },
@@ -1023,7 +1027,7 @@
       {
         "t": "Doobeda",
         "title": "Chill okolo Kuromonu",
-        "note": "Wagyu na špajli, sashimi v bočných uličkách. Nie priamo Kuromon Market, to je tourist trap.",
+        "note": "Wagyu na špajli a sashimi. Pozrieť aj bočné uličky okolo Kuromonu a porovnať ponuku aj ceny.",
         "places": [
           "kuromon_ichiba"
         ]

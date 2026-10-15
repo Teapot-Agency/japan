@@ -17,3 +17,16 @@ Výsledok je v `.vercel/output`. Build nahradí vložené dáta, zmení hash JS 
 Pred nasadením over prepojenie na Vercel projekt `japonsko-2026`, tím `teapot-agencys-projects`. Nasadenie cez CLI používa `vercel deploy --prebuilt --prod`. GitHub zatiaľ automaticky nenasadzuje.
 
 Google Maps používa verejný browser key. Pri builde ho poskytni cez `GOOGLE_MAPS_BROWSER_KEY` alebo ignorovaný súbor `.vercel/maps-browser-key.txt`. Kľúč sa do GitHubu neukladá; v nasadenej stránke ho prehliadač potrebuje. Súkromný potvrdzovací odkaz Booking bol nahradený odkazom na správu rezervácií.
+
+## Texty pre sprevádzanie
+
+Píš prirodzenou slovenčinou tak, aby sa text dal povedať nahlas. Každý príbeh má vysvetliť konkrétnu udalosť, zvyk alebo detail na mieste. Vynechávaj formulácie „je to X, nie Y“, opakované obhajovanie faktov a abstraktné poučenia. Legendy stačí uviesť slovami „podľa legendy“. Praktické pokyny drž stručné a zhodné s rezerváciami v itinerári.
+
+## Zdroje k Sensō-ji
+
+- [História a areál chrámu](https://www.senso-ji.jp/english/)
+- [Veštby a skrytá socha – FAQ chrámu](https://www.senso-ji.jp/faq/)
+- [Kaminarimon a rozmery lampióna](https://www.senso-ji.jp/guide/guide01.html)
+- [Hōzōmon a obrie sandále](https://www.senso-ji.jp/guide/guide03.html)
+
+Zvyšok úprav je jazyková redakcia existujúcich podkladov; nejde o novú úplnú kontrolu faktov a prevádzkových údajov.
